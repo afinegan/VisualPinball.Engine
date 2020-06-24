@@ -254,6 +254,7 @@
     <Compile Include="VPT\Trigger\TriggerBehavior.cs" />
     <Compile Include="VPT\Trigger\TriggerCollider.cs" />
     <Compile Include="VPT\Trigger\TriggerMovementData.cs" />
+    <Compile Include="VPT\Trigger\TriggerMovementSystem.cs" />
     <Compile Include="VPT\Trigger\TriggerStaticData.cs" />
   </ItemGroup>
   <ItemGroup>
