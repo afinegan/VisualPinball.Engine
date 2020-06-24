@@ -236,6 +236,9 @@
 		<Compile Include="VPT\Timer\TimerOnOff.cs" />
 		<Compile Include="VPT\Trigger\Trigger.cs" />
 		<Compile Include="VPT\Trigger\TriggerData.cs" />
+		<Compile Include="VPT\Trigger\TriggerHitCircle.cs" />
+		<Compile Include="VPT\Trigger\TriggerHitGenerator.cs" />
+		<Compile Include="VPT\Trigger\TriggerHitLineSeg.cs" />
 		<Compile Include="VPT\Trigger\TriggerMeshGenerator.cs" />
 	</ItemGroup>
 	<ItemGroup>
