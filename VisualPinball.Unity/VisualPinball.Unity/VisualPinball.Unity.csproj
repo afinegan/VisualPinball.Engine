@@ -249,7 +249,9 @@
     <Compile Include="VPT\Table\TableApi.cs" />
     <Compile Include="VPT\Table\TableExtensions.cs" />
     <Compile Include="VPT\Table\TableBehavior.cs" />
+    <Compile Include="VPT\Trigger\TriggerAnimationData.cs" />
     <Compile Include="VPT\Trigger\TriggerBehavior.cs" />
+    <Compile Include="VPT\Trigger\TriggerCollider.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\VisualPinball.Engine\VisualPinball.Engine.csproj">

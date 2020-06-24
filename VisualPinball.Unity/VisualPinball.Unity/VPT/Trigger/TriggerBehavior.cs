@@ -4,6 +4,7 @@
 // ReSharper disable MemberCanBePrivate.Global
 #endregion
 
+using Unity.Entities;
 using UnityEngine;
 using VisualPinball.Engine.Math;
 using VisualPinball.Engine.VPT.Trigger;
@@ -12,9 +13,14 @@ using VisualPinball.Unity.Extensions;
 namespace VisualPinball.Unity.VPT.Trigger
 {
 	[AddComponentMenu("Visual Pinball/Trigger")]
-	public class TriggerBehavior : ItemBehavior<Engine.VPT.Trigger.Trigger, TriggerData>, IDragPointsEditable
+	public class TriggerBehavior : ItemBehavior<Engine.VPT.Trigger.Trigger, TriggerData>, IDragPointsEditable, IConvertGameObjectToEntity
 	{
 		protected override string[] Children => null;
+
+		public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
+		{
+			Convert(entity, dstManager);
+		}
 
 		protected override Engine.VPT.Trigger.Trigger GetItem()
 		{
